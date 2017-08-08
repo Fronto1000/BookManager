@@ -54,7 +54,7 @@
 
 <h1>Book List</h1>
 
-<c:if test="${!empty listBooks}">
+<c:if test="${!empty bookList}">
     <table class="tg">
         <tr>
             <th width="80">ID</th>
@@ -64,7 +64,7 @@
             <th width="60">Edit</th>
             <th width="60">Delete</th>
         </tr>
-        <c:forEach items="${listBooks}" var="book">
+        <c:forEach items="${bookList}" var="book">
             <tr>
                 <td>${book.id}</td>
                 <td><a href="/bookdata/${book.id}" target="_blank">${book.bookTitle}</a></td>

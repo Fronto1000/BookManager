@@ -41,7 +41,7 @@ public class BookController {
         return "redirect:/books";
     }
 
-    @RequestMapping("/remover/{id}")
+    @RequestMapping("/remove/{id}")
     public String removedBook(@PathVariable("id") int id) {
         this.bookService.removeBook(id);
         return "redirect:/books";
